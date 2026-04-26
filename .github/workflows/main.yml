@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync ./src s3://your-bucket-name-here --delete
+          aws s3 sync ./src s3://cyber-web-123 --delete
