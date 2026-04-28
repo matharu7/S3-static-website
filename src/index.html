@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecProject - Static Site</title>
+    <meta name="description" content="Security Dashboard for system monitoring">
+    <title>Staci Security Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>Security Dashboard</h1>
-        <p>Status: <span id="status">Scanning...</span></p>
-        <button onclick="checkSystem()">Run System Check</button>
-    </div>
+
+        <p>
+            Status: 
+            <strong id="status" aria-live="polite">Scanning...</strong>
+        </p>
+
+        <button type="button" onclick="checkSystem()">
+            Run System Check
+        </button>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
